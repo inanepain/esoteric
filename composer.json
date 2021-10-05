@@ -1,0 +1,43 @@
+{
+	"name": "inanepain/esoteric",
+	"description": "Esoteric offerings from Inane",
+	"type": "library",
+	"keywords": [
+		"star-sign",
+		"birth-number",
+		"name-number"
+	],
+	"homepage": "https://git.inane.co.za:3000/inane/esoteric",
+	"license": "MIT",
+	"authors": [{
+		"name": "Philip Michael Raab",
+		"email": "philip@inane.co.za",
+		"homepage": "https://inane.co.za",
+		"role": "Developer"
+	}],
+	"support": {
+		"email": "philip@inane.co.za",
+		"wiki": "https://git.inane.co.za:3000/inane/esoteric/wiki",
+		"issues": "https://git.inane.co.za:3000/inane/esoteric/issues"
+	},
+	"require": {
+		"php": ">=8.0"
+	},
+	"autoload": {
+		"psr-4": {
+			"Inane\\Esoteric": "src/"
+		}
+	},
+	"minimum-stability": "dev",
+	"repositories": [{
+		"type": "composer",
+		"url": "https://packer.inane.co.za",
+		"name": "Inane Packer"
+	}],
+	"config": {
+		"preferred-install": "dist",
+		"optimize-autoloader": true,
+		"discard-changes": true,
+		"sort-packages": true
+	}
+}
