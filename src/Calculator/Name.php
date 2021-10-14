@@ -4,11 +4,16 @@
  * Name Numbers
  * 
  * PHP version 8
+ * 
+ * // $peep = new Name('Philip Raab');
+ * // echo $peep;
+ * // $peep = new Name('Philip Michael Raab');
+ * // echo $peep;
  */
 
 declare(strict_types=1);
 
-namespace Inane\Esoteric;
+namespace Inane\Esoteric\Calculator;
 
 use Inane\Util\NumberUtil;
 
@@ -93,6 +98,7 @@ class Name {
             'AsLovers' => "These lovers are involved and helpful. Because they are sympathetic, they can easily be doormats. They show their love by helping their partners, and assuming their lovers' problems. If triggered, their emotions can be volcanic, and a seemingly meek personality can resort to bullying tactics when unhappy.",
         ]
     ];
+
     protected static array $meanings = [
         'personality' => [
             1 => 'pioneering, leading, independent, attaining, individualistic',
@@ -151,7 +157,7 @@ class Name {
         ],
     ];
 
-    protected static array $lookup = [
+    protected static array $characterMappings = [
         'ajs',
         'bkt',
         'clm',
@@ -163,7 +169,7 @@ class Name {
         'ir'
     ];
 
-    protected static array $normalise = [
+    protected static array $normaliseMappings = [
         'ъ' => '-', 'Ь' => '-', 'Ъ' => '-', 'ь' => '-',
         'Ă' => 'A', 'Ą' => 'A', 'À' => 'A', 'Ã' => 'A', 'Á' => 'A', 'Æ' => 'A', 'Â' => 'A', 'Å' => 'A', 'Ä' => 'Ae',
         'Þ' => 'B',
@@ -221,25 +227,20 @@ class Name {
     }
 
     protected function stringToNumber(string $s): int {
-        foreach (static::$lookup as $idx => $val)  $s = str_replace(str_split($val), ($idx + 1) . "", $s);
+        foreach (static::$characterMappings as $idx => $val)  $s = str_replace(str_split($val), ($idx + 1) . "", $s);
 
         return (int) $s;
     }
 
     protected function parseName(string $name) {
-        $name = strtr($name, static::$normalise);
+        $name = strtr($name, static::$normaliseMappings);
 
         $name = preg_replace("/[^a-z]/", '', strtolower($name));
         $consonants = str_replace(str_split('aeiou'), '', $name);
         $vowels = str_replace(str_split($consonants), '', $name);
 
-        $this->data['destiny'] = NumberUtil::reduceNumber(number: $this->stringToNumber($name), exceptions: [11, 22, 33]);
-        $this->data['soul'] = NumberUtil::reduceNumber($this->stringToNumber($vowels));
-        $this->data['personality'] = NumberUtil::reduceNumber($this->stringToNumber($consonants));
+        $this->data['destiny'] = NumberUtil::reduceNumber(number: $this->stringToNumber($name), exceptions: [11, 22, 33, 44, 55]);
+        $this->data['soul'] = NumberUtil::reduceNumber($this->stringToNumber($vowels), exceptions: [11, 22]);
+        $this->data['personality'] = NumberUtil::reduceNumber($this->stringToNumber($consonants), exceptions: [11, 22]);
     }
 }
-
-// $peep = new Name('Philip Raab');
-// echo $peep;
-// $peep = new Name('Philip Michael Raab');
-// echo $peep;

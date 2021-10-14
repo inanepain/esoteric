@@ -8,7 +8,7 @@
 
 declare(strict_types=1);
 
-namespace Inane\Esoteric;
+namespace Inane\Esoteric\Calculator;
 
 use DateTime;
 use Inane\Util\NumberUtil;
@@ -21,7 +21,7 @@ use function is_array;
  * 
  * @version 1.0.0
  */
-class Birth {
+class Birthday {
     private static array $birthNumbers = [
         1 => [
             'life path' => 1,

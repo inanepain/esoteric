@@ -11,6 +11,8 @@ declare(strict_types=1);
 namespace Inane\Esoteric;
 
 use DateTime;
+use Inane\Esoteric\Calculator\Birthday;
+use Inane\Esoteric\Calculator\Name;
 
 /**
  * Contact
@@ -19,7 +21,7 @@ use DateTime;
  */
 class Contact {
     protected Name $nameNumber;
-    protected Birth $birthNumber;
+    protected Birthday $birthNumber;
 
     protected DateTime $birthday;
 
@@ -31,7 +33,7 @@ class Contact {
     ) {
         $this->birthday = DateTime::createFromFormat('Y/m/d', "$year/$month/$day");
         $this->nameNumber = new Name($name);
-        $this->birthNumber = new Birth($this->birthday);
+        $this->birthNumber = new Birthday($this->birthday);
     }
 
     public static function fromDate(string $name, DateTime $date): static {
