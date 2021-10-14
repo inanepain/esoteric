@@ -22,9 +22,25 @@ use function implode;
  * @version 1.0.0
  */
 class Contact {
+    /**
+     * Name Calculator
+     * 
+     * @var \Inane\Esoteric\Calculator\Name
+     */
     protected Name $nameNumber;
+
+    /**
+     * Birthday Calculator
+     * 
+     * @var \Inane\Esoteric\Calculator\Birthday
+     */
     protected Birthday $birthNumber;
 
+    /**
+     * Birthday
+     * 
+     * @var \DateTime
+     */
     protected DateTime $birthday;
 
     /**
@@ -38,9 +54,21 @@ class Contact {
      * @return void 
      */
     public function __construct(
+        /**
+         * Full name
+         */
         protected string $name,
+        /**
+         * Year of birth
+         */
         protected int $year,
+        /**
+         * Month of birth
+         */
         protected int $month,
+        /**
+         * Day of birth
+         */
         protected int $day
     ) {
         $this->birthday = DateTime::createFromFormat('Y/m/d', "$year/$month/$day");
