@@ -21,7 +21,7 @@ The different indicators in numerology are:
 3. **Personality number**: This number is calculated using the consonants in your first name. It is also known as the dream or inner-dream number. The number describes your personality and gives you an idea of how others see you. Knowing how others perceive you will help you overcome fallacious perceptions and let your inner soul shine through.
 4. **Soul number**: This number is calculated using the numbers corresponding the vowels in your first name and surname. It is also known as soul urge number or heart desire number. It gives you an insight of your inner strengths, likes, dislikes, and resources. Simply put, it says who you are and reveals the inner self that you may have kept hidden from others.
 
-Each module is details in it's on section bellow.
+Each module is detailed in it's on section bellow.
 
 
 ### Star Sign

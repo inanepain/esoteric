@@ -21,26 +21,25 @@ The different indicators in numerology are:
    2. It is also known as *expression*, *name* or *namank number*.
    3. It gives you a glance of your purpose in life.
    4. It describes your character
-   5. unveils your goals and gives you an idea on how to achieve them.
-   6. lets you know the obstacles that can come your way.
-   7. https://askastrology.com/numerology/expression-number/
+   5. Unveils your goals and gives you an idea on how to achieve them.
+   6. Lets you know the obstacles that can come your way.
+   7. [More Information](https://askastrology.com/numerology/expression-number/ "ask astrology")
 
-3. **Personality number**: (The Personality number represents social status and the connection to the material world)
+3. **Personality number**: `social status and the connection to the material world`
    1. This number is calculated using the ***consonants in your first name***.
    2. It is also known as the *dream* or *inner-dream* number.
    3. The number describes your personality
-   4. gives you an idea of how others see you.
+   4. Gives you an idea of how others see you.
    5. Knowing how others perceive you will help you overcome fallacious perceptions and let your inner soul shine through.
-   6. https://askastrology.com/numerology/numerology-101/personality-number/
+   6. [More Information](https://askastrology.com/numerology/numerology-101/personality-number/ "ask astrology")
 
-4. **Soul number**: (The Soul Urge represents your deepest desire, what you most want and need emotionally)
+4. **Soul number (Soul Urge)**: `deepest desires and emotional wants or needs`
    1. This number is calculated using the numbers corresponding the ***vowels in your first name and surname***.
    3. It is also known as *soul urge* number or *heart desire* number.
-   4. It gives you an insight of your inner
+   4. It gives you an insight of your inner:
       1. strengths
       2. likes
       3. dislikes
       4. resources
    5. Simply put, it says who you are and reveals the inner self that you may have kept hidden from others.
-   6. https://askastrology.com/numerology/numerology-101/soul-urge-number/
-
+   6. [More Information](https://askastrology.com/numerology/numerology-101/soul-urge-number/ "ask astrology")
