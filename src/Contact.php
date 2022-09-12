@@ -1,9 +1,20 @@
 <?php
 
 /**
- * Contact
+ * Inane
  *
- * PHP version 8
+ * Esoteric
+ *
+ * PHP version 8.1
+ *
+ * @package Inane\Esoteric
+ * @author Philip Michael Raab<peep@inane.co.za>
+ *
+ * @license UNLICENSE
+ * @license https://github.com/inanepain/esoteric/raw/develop/UNLICENSE UNLICENSE
+ *
+ * @version $Id$
+ * $Date$
  */
 
 declare(strict_types=1);

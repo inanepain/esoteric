@@ -1,10 +1,23 @@
 <?php
 
 /**
- * Name Numbers
- * 
- * PHP version 8
- * 
+ * Inane
+ *
+ * Esoteric
+ *
+ * PHP version 8.1
+ *
+ * @package Inane\Esoteric
+ * @author Philip Michael Raab<peep@inane.co.za>
+ *
+ * @license UNLICENSE
+ * @license https://github.com/inanepain/esoteric/raw/develop/UNLICENSE UNLICENSE
+ *
+ * @version $Id$
+ * $Date$
+ */
+
+/**
  * // $peep = new Name('Philip Raab');
  * // echo $peep;
  * // $peep = new Name('Philip Michael Raab');
@@ -17,18 +30,17 @@ namespace Inane\Esoteric\Calculator;
 
 use Inane\Util\NumberUtil;
 
-use const PHP_EOL;
-
 use function implode;
 use function preg_replace;
 use function str_replace;
 use function str_split;
 use function strtolower;
 use function strtr;
+use const PHP_EOL;
 
 /**
  * Name
- * 
+ *
  * @version 1.0.0
  */
 class Name {

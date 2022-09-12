@@ -1,5 +1,7 @@
 # Inane: Esoteric
 
+> $Id$ ($Date$)
+
 Esoteric offerings from Inane.
 
 So far Inane Esoteric has three modules:
